@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ObjectList from './list/ObjectList';
+import SimpleList from './list/SimpleList';
+import ConditionalList from './list/ConditionalList'
+import ListItem from './list/ListItem';
+import UserInput from './list/UserInput';
+import DeletableList from './list/DeletableList';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <SimpleList />
+      <ObjectList />
+      <ConditionalList />
+      <ListItem />
+      <UserInput />
+      <DeletableList />
       </header>
     </div>
   );
